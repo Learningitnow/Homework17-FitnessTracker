@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/", {
 });
 
 app.use(require("./routes/html.js"));
-// app.use(require("./routes/api.js"));
+app.use(require("./routes/function.js"));
 
 
 app.listen(PORT, function() {
